@@ -7,7 +7,8 @@
   <link rel="stylesheet" href="/stylesheets/style.css" />
 </head>
 <body>
-  <h1>Developer Skills</h1>
+  <a href="/">Home</a> | <a href="/skills/new">Add Skills</a>
+  <h1>Developer Skills List</h1>
   <ul>
     <% skills.forEach(function(s) { %>
       <li><a href="/skills/<%= s.id %>"><%= s.skill %></a> - <%= s.learned ? 'Learned' : 'Not learned' %></li>
