@@ -8,9 +8,9 @@
 <body>
   <h1>Developer Skills</h1>
   <ul>
-    <% skills.forEach(function(s) { %> 
-    <li><a href="/skills/<% s.id %>"><%= s.skill %></a> - <%= s.learned ? 'Learned!' : "Not yet" %></li>
-    <% }); %>
+    <% skills.forEach(function(s) { %>
+      <li><a href="/skills/<%= s.id %>"><%= s.skill %></a> - <%= s.learned ? 'Learned' : 'Not learned' %></li>
+      <% }); %>
   </ul>
 </body>
 </html>
