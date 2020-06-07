@@ -7,20 +7,21 @@
   <link rel="stylesheet" href="/stylesheets/style.css" />
 </head>
 <body>
-  <a href="/">Home</a> | <a href="/skills">Back to Skills</a>
+  
   <h1>Add New Skill</h1>
   <form action="/skills" method="POST" autocomplete="off">
-    <label for="skill">Skill:</label>
-    <input type="text" name="skill">
-    <br />
-    <label for="haveyoulearned">Have You Learned This Yet?:</label>
-    <br />
-    <label for="learned">Learned</label>
-    <input type="radio" name="learned" value="learned">
-    <label for="learned">Not Learned</label>
-    <input type="radio" name="learned" value="notlearned">
-    <br />
-    <button type="submit" id="addskill">Add Skill</button>
+    <div class="form">
+      <label for="skill">Skill</label>
+      <input type="text" name="skill" id="skillinput"> 
+    </div>
+    <div class="newform">
+      <label for="haveyoulearned">Have You Learned This Yet?</label> 
+      <input type="radio" name="learned" value="learned">
+      <label for="learned">Yes</label>
+      <input type="radio" name="learned" value="notlearned"><label for="learned">No</label>
+    </div>
+    <div id="submitbutton"><button type="submit" id="addskill">Add Skill</button></div>
   </form>
+  <span><a href="/"><button class="nav">Home</button></a><a href="/skills"><button class="nav">Back to Skills</button></a></span>
 </body>
 </html>

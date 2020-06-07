@@ -7,7 +7,6 @@
   <link rel="stylesheet" href="/stylesheets/style.css" />
 </head>
 <body>
-  <a href="/">Home</a> | <a href="/skills/new">Add Skills</a>
   <h1>Developer Skills List</h1>
   <ul>
     <% skills.forEach(function(s) { %>
@@ -19,5 +18,7 @@
           <a href="/skills/<%= s.id %>"><%= s.skill %></a> - <%= s.learned ? 'Learned' : 'Not learned' %></li>
       <% }); %>
   </ul>
+  <span><a href="/"><button class="nav">Home</button></a>  <a href="/skills/new"><button class="nav">Add Skills</button></a></span>
+  
 </body>
 </html>

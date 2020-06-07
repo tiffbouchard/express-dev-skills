@@ -7,7 +7,6 @@
   <link rel="stylesheet" href="/stylesheets/style.css" />
 </head>
 <body>
-  <a href="/">Home</a> | <a href="/skills">Back to Skills</a>
   <% if (skill) { %>
     <h1>Skill #<%= skill.id %></h1>
     <h3><%= skill.skill %></h3>
@@ -15,5 +14,6 @@
     <% } else { %>
     <h3>Skill Not Found</h3>
     <% } %>
+    <span><a href="/"><button class="nav">Home</button></a><a href="/skills"><button class="nav">Back to Skills</button></a></span>
 </body>
 </html>
