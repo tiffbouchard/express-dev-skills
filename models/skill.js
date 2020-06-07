@@ -20,6 +20,7 @@ function create(skill) {
   skills.push(skill);
 }
 
+
 function deleteSkill(id) {
   const idx = skills.findIndex((todo) => todo.id === parseInt(id));
   skills.splice(idx, 1);
