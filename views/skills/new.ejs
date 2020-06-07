@@ -7,15 +7,19 @@
   <link rel="stylesheet" href="/stylesheets/style.css" />
 </head>
 <body>
-  <form>
-    <label for="skill">Skill</label>
+  <h1>Add New Skill</h1>
+  <form action="/skills" method="POST" autocomplete="off">
+    <label for="skill">Skill:</label>
     <input type="text">
-    <label for="haveyoulearned">Have You Learned This Yet?</label>
+    <br />
+    <label for="haveyoulearned">Have You Learned This Yet?:</label>
+    <br />
     <label for="learned">Learned</label>
-    <input type="radio" value="learned">
+    <input type="radio" name="learnedor" value="learned">
     <label for="learned">Not Learned</label>
-    <input type="radio" value="notlearned">
-    <input type="submit" value="Add Skill">
+    <input type="radio" name="learnedor" value="notlearned">
+    <br />
+    <button type="submit">Add Skill</button>
   </form>
 </body>
 </html>
