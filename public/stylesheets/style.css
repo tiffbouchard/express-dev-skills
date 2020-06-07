@@ -2,7 +2,34 @@ body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
-
 a {
   color: #00B7FF;
+}
+li {
+  display: flex;
+  margin: 10px;
+}
+#delete {
+  background-color:rgb(255, 104, 104);
+  color: white;
+  border: none;
+  border-radius: 20px;
+  height: 25px;
+  width: 25px;
+  margin: 0 10px 0 0;
+}
+#delete:hover {
+  background-color: rgb(255, 59, 59);
+  cursor: pointer;
+}
+#addskill {
+  background: rgb(95, 143, 116);
+  color: white;
+  border: none;
+  height: 20px;
+  width: 200px;
+}
+#addskill:hover {
+  background-color: rgb(3, 110, 56);
+  cursor: pointer;
 }

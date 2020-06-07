@@ -11,7 +11,12 @@
   <h1>Developer Skills List</h1>
   <ul>
     <% skills.forEach(function(s) { %>
-      <li><a href="/skills/<%= s.id %>"><%= s.skill %></a> - <%= s.learned ? 'Learned' : 'Not learned' %></li>
+      <li>
+        <form action="/skills/<%= s.id %>?_method=DELETE"
+          class="delete-form" method="POST">
+          <button type="submit" id="delete">X</button>
+        </form>
+          <a href="/skills/<%= s.id %>"><%= s.skill %></a> - <%= s.learned ? 'Learned' : 'Not learned' %></li>
       <% }); %>
   </ul>
 </body>

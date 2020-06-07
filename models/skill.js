@@ -16,10 +16,9 @@ function getOne(id) {
 
 function create(skill) {
   skill.id = Date.now() % 1000000;
-  skill.learned = false;
+  skill.learned = null;
   skills.push(skill);
 }
-
 
 function deleteSkill(id) {
   const idx = skills.findIndex((todo) => todo.id === parseInt(id));

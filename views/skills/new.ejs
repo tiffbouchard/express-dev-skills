@@ -11,16 +11,16 @@
   <h1>Add New Skill</h1>
   <form action="/skills" method="POST" autocomplete="off">
     <label for="skill">Skill:</label>
-    <input type="text">
+    <input type="text" name="skill">
     <br />
     <label for="haveyoulearned">Have You Learned This Yet?:</label>
     <br />
     <label for="learned">Learned</label>
-    <input type="radio" name="learnedor" value="learned">
+    <input type="radio" name="learned" value="learned">
     <label for="learned">Not Learned</label>
-    <input type="radio" name="learnedor" value="notlearned">
+    <input type="radio" name="learned" value="notlearned">
     <br />
-    <button type="submit">Add Skill</button>
+    <button type="submit" id="addskill">Add Skill</button>
   </form>
 </body>
 </html>
