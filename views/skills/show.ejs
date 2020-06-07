@@ -6,6 +6,12 @@
   <title>Developer Skills</title>
 </head>
 <body>
-  
+  <% if (skill) { %>
+    <h1>Skill #<%= skill.id %></h1>
+    <h3><%= skill.skill %></h3>
+    <h3>Learned: <%= skill.learned ? 'Yes': 'No' %></h3>
+    <% } else { %>
+    <h3>Skill Not Found</h3>
+    <% } %>
 </body>
 </html>
