@@ -20,7 +20,7 @@ function create(skill) {
   skills.push(skill);
 }
 
-function deleteSkill(id) {
+function deleteOne(id) {
   const idx = skills.findIndex((todo) => todo.id === parseInt(id));
   skills.splice(idx, 1);
 }
@@ -29,5 +29,5 @@ module.exports = {
   getAll,
   getOne,
   create, 
-  deleteSkill,
+  deleteOne,
 };
